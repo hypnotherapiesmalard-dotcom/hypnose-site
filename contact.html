@@ -5,46 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hypnose & Thérapies - Contact</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+        /* ===== Arrière-plan doux et naturel ===== */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+
+            /* Image de fond douce */
+            background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80") no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            z-index: 0;
+        }
+
+        /* Voile blanc pour lisibilité */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            z-index: -1;
+        }
+
+        /* ===== Styles généraux ===== */
         header { text-align: center; }
         .banner-img { width: 100%; max-height: 200px; object-fit: cover; }
         nav { background: #333; color: #fff; padding: 10px; text-align: center; }
         nav a { color: white; margin: 0 15px; text-decoration: none; }
         nav a:hover { text-decoration: underline; }
         main { padding: 20px; max-width: 900px; margin: auto; text-align: center; }
-        footer { text-align: center; padding: 20px; background: #f4f4f4; }
+        footer { text-align: center; padding: 20px; background: rgba(244, 244, 244, 0.9); }
         .logo-small { width: 50px; display: block; margin: 10px auto; }
-        .contact-info { margin: 20px 0; font-size: 1.1em; }
+
+        /* ===== Section contact ===== */
+        .contact-info { margin: 20px 0; font-size: 1.1em; color: #333; }
         .map-img { max-width: 100%; height: auto; border: 1px solid #ccc; margin-top: 20px; }
+
+        h1, h2, h3, p { color: #333; }
+        a { color: #2a7f91; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <header>
         <img src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-9/161313191_114306180684362_422754496127768840_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=-zb_JUM406EQ7kNvwFfvMvf&_nc_oc=AdkNPSdBTJp7wiJmSU8mxPMRLCz5qe68WyMWisNQpC-UzhUnnh4FHtGUcFzTRGwOJUI&_nc_zt=23&_nc_ht=scontent.frns1-1.fna&_nc_gid=pJGwtQQ-7z6nS7kptj8zEw&oh=00_AfVCv-UoDGcvkt783zhGMQmhdLVgwkFe7EpHZiCsPYHHFA&oe=68C11753" alt="Bannière Contact" class="banner-img" />
     </header>
+
     <nav>
-        <a href="index.html">Présentation</a>
-        <a href="hypnose.html">Hypnose</a>
-        <a href="emdr.html">EMDR</a>
-        <a href="temoignages.html">Témoignages</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <main>
-        <h1>Contact</h1>
-        <div class="contact-info">
-            <p>Pour prendre rendez-vous ou pour toute question :</p>
-            <p><strong>Téléphone :</strong> 07 49 77 22 90</p>
-            <p><strong>Email :</strong> <a href="mailto:hypno.therapies.malard@gmail.com">hypno.therapies.malard@gmail.com</a></p>
-            <p><strong>Adresse :</strong> 8 rue de Névars, Rosporden</p>
-            <p><strong>Horaires :</strong> du lundi au samedi de 8h30 à 19h30</p>
-            <p>En cas d'empêchement, pensez à annuler au minimum 2 jours avant le rendez-vous. Toute séance annulée dans les 48h précédant le RDV est due. En cas d’imprévu, cela peut arriver à tout le monde, appelez-moi ou laissez-moi un message. Merci</p>
-        </div>
-        <img src="images/capture-maps.png" alt="Localisation du cabinet" class="map-img" />
-        <!-- Remplace src ci-dessus par le chemin correct vers ta capture d'écran de la carte -->
-    </main>
-    <footer>
-        <p>Adresse : 8 rue de Névars, Rosporden<br>ou<br>Anahata, Centre de santé intégrative, 5 bis rue des écoles 29900 Concarneau<br>Horaires : du lundi au samedi de 8h30 à 19h30<br>
-        <img src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-1/160941709_114306064017707_8155863414297744930_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=eYAEH8TCvKEQ7kNvwFNsrnw&_nc_oc=AdkUillqsqBAUlZd6zmRrjWzr8Lyx4IfHQBLA1Ok_a_b6qr32tVU2n1gMQJFzxTmO1Y&_nc_zt=24&_nc_ht=scontent.frns1-1.fna&_nc_gid=pJGwtQQ-7z6nS7kptj8zEw&oh=00_AfUEhue-3NAqfAj8wnVsFUPENpMMY2RJYC32BM0naa__YA&oe=68C13171" alt="logo" class="logo-small" />
-    </footer>
-</body>
-</html>
+        <a href="inde
+
