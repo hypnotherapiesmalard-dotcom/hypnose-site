@@ -5,7 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hypnose & Thérapies - Présentation</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+        /* ===== Arrière-plan doux et naturel ===== */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+
+            /* Image de fond douce (océan pastel depuis Unsplash) */
+            background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80") no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            z-index: 0;
+        }
+
+        /* Voile blanc semi-transparent par-dessus l’image */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            z-index: -1;
+        }
+
+        /* ===== Styles existants ===== */
         header { text-align: center; }
         .banner-img { width: 100%; height: auto; max-height: 200px; object-fit: cover; }
         nav { background: #333; color: #fff; padding: 10px; text-align: center; }
@@ -13,9 +39,14 @@
         nav a:hover { text-decoration: underline; }
         main { padding: 20px; max-width: 900px; margin: auto; text-align: center; }
         .portrait { width: 200px; border-radius: 50%; margin: 20px 0; }
-        footer { text-align: center; padding: 20px; background: #f4f4f4; }
+        footer { text-align: center; padding: 20px; background: rgba(244, 244, 244, 0.9); }
         .logo-small { width: 50px; height: auto; display: block; margin: 10px auto; }
         .map-img { max-width: 100%; height: auto; margin-top: 20px; }
+
+        /* ===== Texte et liens ===== */
+        h1, h2, h3, p { color: #333; }
+        a { color: #2a7f91; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -35,7 +66,7 @@
         <h1>HYPNOSE ET THERAPIES</h1>
         <img src="https://lh3.googleusercontent.com/p/AF1QipNLKZBdmevQRAs-SV2PIIbIsYMXkCmpoO1uty7V=s1360-w1360-h1020-rw" alt="Photo portrait" class="portrait">
         <p>Je suis thérapeute spécialisé en hypnose Ericksonienne, EMDR-DSA et Somatic Experiencing. Mon approche est centrée sur la personne, dans un cadre bienveillant et confidentiel. Mon objectif est de vous accompagner vers un mieux-être durable en utilisant des outils efficaces et adaptés à vos besoins.</p>
-        <p>Mes outils thérapeutiques sont l'Hypnose Ericksonienne pour traiter le stress, les peurs, les blocages et les addictions; l'EMDR-DSA pour se libérer des traumatismes, deuils et phobies; et la Somatic Experiencing  pour réguler le stress chronique et l’anxiété.</p>
+        <p>Mes outils thérapeutiques sont l'Hypnose Ericksonienne pour traiter le stress, les peurs, les blocages et les addictions; l'EMDR-DSA pour se libérer des traumatismes, deuils et phobies; et la Somatic Experiencing pour réguler le stress chronique et l’anxiété.</p>
     </main>
 
     <footer>
