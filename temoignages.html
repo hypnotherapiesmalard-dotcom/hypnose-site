@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Témoignages - Hypnose & Thérapies</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
-            background: #ffffff; /* Fond blanc du site */
+            background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80") no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            z-index: 0;
         }
-        header {
-            text-align: center;
-        }
-        .banner-img {
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            max-height: 200px;
-            object-fit: cover;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            z-index: -1;
         }
+
+        header { text-align: center; }
+        .banner-img { width: 100%; max-height: 200px; object-fit: cover; }
+
         nav {
             background: #333;
             color: #fff;
@@ -31,22 +40,23 @@
             margin: 0 15px;
             text-decoration: none;
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
+        nav a:hover { text-decoration: underline; }
+
         main {
             padding: 20px;
             max-width: 900px;
             margin: auto;
-            background-color: white; /* Fond blanc derrière le texte */
+            text-align: center;
+            background: rgba(255,255,255,0.85);
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
-        main h1 {
-            text-align: center; /* Centre le titre */
-        }
+        main h1 { text-align: center; color: #2a7f91; }
+
         footer {
             text-align: center;
             padding: 20px;
-            background: #f4f4f4;
+            background: rgba(244, 244, 244, 0.9);
         }
         .logo-small {
             width: 50px;
@@ -58,7 +68,7 @@
 </head>
 <body>
     <header>
-        <img src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-9/161313191_114306180684362_422754496127768840_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=-zb_JUM406EQ7kNvwFfvMvf&_nc_oc=AdkNPSdBTJp7wiJmSU8mxPMRLCz5qe68WyMWisNQpC-UzhUnnh4FHtGUcFzTRGwOJUI&_nc_zt=23&_nc_ht=scontent.frns1-1.fna&_nc_gid=pJGwtQQ-7z6nS7kptj8zEw&oh=00_AfVCv-UoDGcvkt783zhGMQmhdLVgwkFe7EpHZiCsPYHHFA&oe=68C11753" alt="Bannière Hypnose et Thérapies" class="banner-img" />
+        <img src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-9/161313191_114306180684362_422754496127768840_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=-zb_JUM406EQ7kNvwFfvMvf&_nc_oc=AdkNPSdBTJp7wiJmSU8mxPMRLCz5qe68WyMWisNQpC-UzhUnnh4FHtGUcFzTRGwOJUI&_nc_zt=23&_nc_ht=scontent.frns1-1.fna&_nc_gid=pJGwtQQ-7z6nS7kptj8zEw&oh=00_AfVCv-UoDGcvkt783zhGMQmhdLVgwkFe7EpHZiCsPYHHFA&oe=68C11753" alt="Bannière Hypnose et Thérapies" class="banner-img">
     </header>
 
     <nav>
@@ -71,7 +81,7 @@
 
     <main>
         <h1>Témoignages</h1>
-        
+
         <p>"Merci Vincent ! Pour votre aide et votre empathie, qui m'ont bien aidé à avancer. Je vous recommanderai sans hésiter! Encore une fois merci."</p>
 
         <p>"Au top, véritablement j'ai l'impression de renaître, je me sens libérée de tous les poids qui pouvaient m'empêcher d'avancer. Aujourd'hui est une nouvelle vie et une autre page qui s'écrit. Vous pouvez lui donner toute votre confiance, il vous aidera et je vous invite à y aller.
@@ -91,9 +101,9 @@
             Anahata, Centre de santé intégrative, 5 bis rue des écoles 29900 Concarneau<br>
             Horaires : du lundi au samedi de 8h30 à 19h30<br>
             07 49 77 22 90<br>
-            Adresse mail : hypno.therapies.malard@gmail.com
+            Email : hypno.therapies.malard@gmail.com
         </p>
-        <img src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-1/160941709_114306064017707_8155863414297744930_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=eYAEH8TCvKEQ7kNvwFNsrnw&_nc_oc=AdkUillqsqBAUlZd6zmRrjWzr8Lyx4IfHQBLA1Ok_a_b6qr32tVU2n1gMQJFzxTmO1Y&_nc_zt=24&_nc_ht=scontent.frns1-1.fna&_nc_gid=pJGwtQQ-7z6nS7kptj8zEw&oh=00_AfUEhue-3NAqfAj8wnVsFUPENpMMY2RJYC32BM0naa__YA&oe=68C13171" alt="logo" class="logo-small" />
+        <img src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-1/160941709_114306064017707_8155863414297744930_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=eYAEH8TCvKEQ7kNvwFNsrnw&_nc_oc=AdkUillqsqBAUlZd6zmRrjWzr8Lyx4IfHQBLA1Ok_a_b6qr32tVU2n1gMQJFzxTmO1Y&_nc_zt=24&_nc_ht=scontent.frns1-1.fna&_nc_gid=pJGwtQQ-7z6nS7kptj8zEw&oh=00_AfUEhue-3NAqfAj8wnVsFUPENpMMY2RJYC32BM0naa__YA&oe=68C13171" alt="logo" class="logo-small">
     </footer>
 </body>
 </html>
