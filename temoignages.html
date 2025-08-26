@@ -17,7 +17,6 @@
       z-index: 0;
     }
 
-    /* Voile blanc semi-transparent */
     body::before {
       content: "";
       position: fixed;
@@ -51,7 +50,9 @@
       text-decoration: none;
     }
 
-    nav a:hover { text-decoration: underline; }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
     main {
       padding: 20px;
@@ -73,21 +74,18 @@
       text-align: justify;
     }
 
-    /* Bloc avis externes */
     .avis-externes {
-      background: rgba(255,255,255,0.9);
-      border-radius: 8px;
+      margin: 40px auto;
       padding: 20px;
-      margin: 30px auto;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
-      max-width: 600px;
     }
 
     .avis-externes h2 {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       font-size: 1.5em;
-      color: #2a7f91;
     }
 
     .avis-item {
@@ -95,22 +93,25 @@
       align-items: center;
       justify-content: center;
       margin: 10px 0;
-      gap: 10px;
-      font-size: 1.1em;
+      gap: 15px;
     }
 
     .avis-item img {
-      height: 28px;
-      width: auto;
+      height: 30px;
     }
 
-    .avis-externes a {
+    .avis-item p {
+      margin: 0;
+      font-size: 1em;
+    }
+
+    .avis-item a {
       color: #2a7f91;
-      font-weight: bold;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    .avis-externes a:hover {
+    .avis-item a:hover {
       text-decoration: underline;
     }
 
@@ -144,7 +145,7 @@
   <main>
     <h1>TEMOIGNAGES</h1>
 
-    <!-- Bloc avis externes -->
+    <!-- Bloc Avis externes -->
     <div class="avis-externes">
       <h2>⭐ Avis externes</h2>
 
@@ -154,12 +155,12 @@
       </div>
 
       <div class="avis-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/PagesJaunes_logo_2015.svg" alt="Logo Pages Jaunes">
-        <p><strong>Pages Jaunes :</strong> ★ 5 / 5 (5 avis)</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/PagesJaunes_logo_2020.svg" alt="Logo Pages Jaunes">
+        <p><strong>Pages Jaunes :</strong> ★ 5 / 5 (<a href="https://www.pagesjaunes.fr/pros/60712861" target="_blank">voir 5 avis</a>)</p>
       </div>
     </div>
 
-    <!-- Témoignages -->
+    <!-- Témoignages écrits -->
     <p>"Merci Vincent ! Pour votre aide et votre empathie, qui m'ont bien aidé à avancer. Je vous recommanderai sans hésiter! Encore une fois merci."</p>
 
     <p>"Au top, véritablement j'ai l'impression de renaître, je me sens libérée de tous les poids qui pouvaient m'empêcher d'avancer. Aujourd'hui est une nouvelle vie et une autre page qui s'écrit. Vous pouvez lui donner toute votre confiance, il vous aidera et je vous invite à y aller.
@@ -181,7 +182,7 @@
 
     <p>"Séance pour arrêt du tabac. Très bon résultat j'ai arrêté de fumer en une seule séance. Très bon accueil et échange merci pour votre aide. Je recommande"</p>
 
-    <p>"Quelle expérience, en une séance mon habitude de me ronger les ongles a disparu. Vincent est un thérapeute très professionnel , j’y retournerais sans hésiter si besoin. Merci encore."</p> 
+    <p>"Quelle expérience, en une séance mon habitude de me ronger les ongles a disparu. Vincent est un thérapeute très professionnel , j’y retournerais sans hésiter si besoin. Merci encore."</p>
   </main>
 
   <footer>
@@ -193,7 +194,4 @@
       Téléphone : 07 49 77 22 90<br>
       Email : hypno.therapies.malard@gmail.com
     </p>
-    <img src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-1/160941709_114306064017707_8155863414297744930_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=eYAEH8TCvKEQ7kNvwFNsrnw&_nc_oc=AdkUillqsqBAUlZd6zmRrjWzr8Lyx4IfHQBLA1Ok_a_b6qr32tVU2n1gMQJFzxTmO1Y&_nc_zt=24&_nc_ht=scontent.frns1-1.fna&_nc_gid=pJGwtQQ-7z6nS7kptj8zEw&oh=00_AfUEhue-3NAqfAj8wnVsFUPENpMMY2RJYC32BM0naa__YA&oe=68C13171" alt="logo" class="logo-small">
-  </footer>
-</body>
-</html>
+    <img src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-1/160941709_114306064017707_8155863414297744930_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=eYAEH8TCvKEQ7kNvwFNsrnw&_nc_oc=AdkUillqsqBAUlZd6zmRrjWzr8Lyx4IfHQBLA1Ok_a_b6qr32tVU2n1gMQJFzxTmO1
