@@ -1,88 +1,116 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hypnose & Thérapies - Hypnose</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff; /* Fond blanc */
-    line-height: 1.6;
-  }
-  header { text-align: center; }
-  .banner-img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-  }
-  nav {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-  }
-  nav a:hover { text-decoration: underline; }
-  main {
-    max-width: 700px;
-    margin: 40px auto;
-    text-align: center; /* centre le bloc principal */
-  }
-  h1 { margin-bottom: 20px; }
-  h2 { margin-top: 15px; }
-  footer {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 20px;
-  }
-  .logo-small {
-    display: block;
-    margin: 10px auto;
-    width: 50px;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypnose & Thérapies - Hypnose</title>
+    <style>
+        /* ===== Arrière-plan doux et naturel ===== */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80") no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            z-index: 0;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            z-index: -1;
+        }
+
+        /* ===== Styles existants ===== */
+        header { text-align: center; }
+        .banner-img { width: 100%; height: auto; max-height: 200px; object-fit: cover; }
+        nav { background: #333; color: #fff; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 20px; max-width: 900px; margin: auto; text-align: center; }
+        .portrait { width: 200px; border-radius: 50%; margin: 20px 0; }
+        footer { text-align: center; padding: 20px; background: rgba(244, 244, 244, 0.9); }
+        .logo-small { width: 50px; height: auto; display: block; margin: 10px auto; }
+
+        /* ===== Tarifs ===== */
+        .tarifs {
+            background: rgba(255,255,255,0.9);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 40px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .tarifs h2 {
+            margin-bottom: 15px;
+            color: #2a7f91;
+        }
+        .tarifs ul {
+            list-style: none;
+            padding: 0;
+        }
+        .tarifs li {
+            margin: 8px 0;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <img src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-9/161313191_114306180684362_422754496127768840_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=-zb_JUM406EQ7kNvwFfvMvf&_nc_oc=AdkNPSdBTJp7wiJmSU8mxPMRLCz5qe68WyMWisNQpC-UzhUnnh4FHtGUcFzTRGwOJUI&_nc_zt=23&_nc_ht=scontent.frns1-1.fna&_nc_gid=pJGwtQQ-7z6nS7kptj8zEw&oh=00_AfVCv-UoDGcvkt783zhGMQmhdLVgwkFe7EpHZiCsPYHHFA&oe=68C11753" alt="Bannière Hypnose et Thérapies" class="banner-img">
+    </header>
 
-<header>
-  <img class="banner-img" src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-9/161313191_114306180684362_422754496127768840_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=-zb_JUM406EQ7kNvwFfvMvf&_nc_oc=AdkNPSdBTJp7wiJmSU8mxPMRLCz5qe68WyMWisNQpC-UzhUnnh4FHtGUcFzTRGwOJUI&_nc_zt=23&_nc_ht=scontent.frns1-1.fna&_nc_gid=pJGwtQQ-7z6nS7kptj8zEw&oh=00_AfVCv-UoDGcvkt783zhGMQmhdLVgwkFe7EpHZiCsPYHHFA&oe=68C11753" alt="Bannière Hypnose">
-</header>
+    <nav>
+        <a href="index.html">Présentation</a>
+        <a href="hypnose.html">Hypnose</a>
+        <a href="emdr.html">EMDR</a>
+        <a href="temoignages.html">Témoignages</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<nav>
-  <a href="index.html">Présentation</a>
-  <a href="hypnose.html">Hypnose</a>
-  <a href="emdr.html">EMDR</a>
-  <a href="temoignages.html">Témoignages</a>
-  <a href="contact.html">Contact</a>
-</nav>
+    <main>
+        <h1>HYPNOSE ERICKSONIENNE</h1>
+        <p>L’hypnose Ericksonienne est une approche thérapeutique douce et respectueuse de la personne. 
+        Elle permet d’accéder à vos ressources intérieures afin de surmonter différents blocages et difficultés. Chaque séance est personnalisée afin de répondre au mieux à vos besoins. 
+        L’hypnose est un état naturel, que vous expérimentez déjà chaque jour sans le savoir, par exemple lorsque vous êtes plongé dans un film ou absorbé dans vos pensées.</p>
 
-<main>
-  <h1>Hypnose Ericksonienne</h1>
-  <p>L’hypnose Ericksonienne est une approche thérapeutique qui permet de traiter le stress, les peurs, les blocages et les addictions. Elle utilise un état de conscience modifié pour faciliter les changements positifs.</p>
-  <p>Elle s’adapte à chaque personne et vise un mieux-être durable.</p>
-  <h2>Tarif de la séance : 55€</h2>
-  <h2>Sevrage tabagique : 65€</h2>
-  <h2>Tarif étudiant : 40€</h2>
-</main>
+        <p>Elle est particulièrement efficace pour :</p>
+        <ul style="text-align:left; max-width:700px; margin:auto;">
+            <li>Stress et anxiété</li>
+            <li>Phobies et blocages</li>
+            <li>Addictions (tabac, alcool, etc.)</li>
+            <li>Troubles du sommeil</li>
+            <li>Gestion du poids</li>
+            <li>Préparation mentale (examens, compétitions…)</li>
+        </ul>
 
-<footer>
-  <p>
-    Adresse : 8 rue de Névars, 29140 Rosporden<br>
-    ou<br>
-    Anahata, Centre de santé intégrative, 5 bis rue des écoles 29900 Concarneau<br>
-    Horaires : du lundi au samedi de 8h30 à 19h30<br>
-    07 49 77 22 90<br>
-    Email : hypno.therapies.malard@gmail.com
-  </p>
-  <img class="logo-small" src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-1/160941709_114306064017707_8155863414297744930_n.jpg" alt="Logo">
-</footer>
+        <!-- Tarifs -->
+        <section class="tarifs">
+            <h2>Tarifs</h2>
+            <ul>
+                <li>Séance individuelle : <strong>55 €</strong></li>
+                <li>Sevrage tabagique : <strong>65 €</strong></li>
+                <li>Tarif étudiant : <strong>40 €</strong></li>
+            </ul>
+        </section>
+    </main>
 
+    <footer>
+        <p>
+            Adresse : 8 rue de Névars, 29140 Rosporden<br>
+            ou<br>
+            Anahata, Centre de santé intégrative, 5 bis rue des écoles 29900 Concarneau<br>
+            Horaires : du lundi au samedi de 8h30 à 19h30<br>
+            07 49 77 22 90<br>
+            Email : hypno.therapies.malard@gmail.com
+        </p>
+        <img src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-1/160941709_114306064017707_8155863414297744930_n.jpg" alt="Logo" class="logo-small">
+    </footer>
 </body>
 </html>
