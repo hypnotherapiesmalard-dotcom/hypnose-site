@@ -1,161 +1,209 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hypnose & Thérapies</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hypnose & Thérapies - One Page</title>
 <style>
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80") no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
-}
-body::before {
-    content: "";
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(255,255,255,0.7);
-    z-index: -1;
-}
-header { text-align: center; }
-.banner-img { width: 100%; max-height: 200px; object-fit: cover; }
-nav { background: #333; color: #fff; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 10; }
-nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-nav a:hover { text-decoration: underline; }
-main { max-width: 900px; margin: 30px auto; padding: 0 20px; }
-h1,h2,h3,p { color: #333; text-align: center; }
-p { margin-bottom: 15px; }
-img.portrait { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 20px auto; display: block; border: 4px solid #ccc; box-shadow:0 4px 8px rgba(0,0,0,0.2); }
-section.tarifs { background: rgba(255,255,255,0.9); border-radius: 10px; padding: 20px; margin: 30px auto; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 500px; }
-section.tarifs ul { list-style:none; padding:0; }
-section.tarifs li { margin: 8px 0; font-weight: bold; }
-footer { text-align:center; padding:20px; background: rgba(244,244,244,0.9); }
-.logo-small { width: 50px; height: auto; margin: 10px auto; display:block; }
-.avis-externes { margin: 40px auto; padding: 20px; background: rgba(255,255,255,0.85); border-radius: 8px; max-width:700px; }
-.avis-externes h2 { margin-bottom: 20px; }
-.avis-item { display:flex; justify-content:center; align-items:center; gap:15px; margin-bottom:10px; }
-.avis-item p { margin:0; }
-ul { text-align:left; margin:auto; max-width:700px; padding:0; }
+    /* ===== Fond doux et uniforme ===== */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80") no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+        color: #333;
+    }
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(255,255,255,0.7);
+        z-index: -1;
+    }
+
+    header { text-align: center; }
+    .banner-img {
+        width: 100%;
+        max-height: 250px;
+        min-height: 150px;
+        object-fit: cover;
+        display: block;
+    }
+
+    nav {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    main {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
+    }
+
+    h1, h2, h3, p, li { color: #333; }
+    a { color: #2a7f91; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .portrait {
+        width: 200px; height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        margin: 20px auto;
+        display: block;
+    }
+
+    .tarifs {
+        background: rgba(255,255,255,0.9);
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 40px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    .tarifs h2 { margin-bottom: 15px; color: #2a7f91; }
+    .tarifs ul { list-style: none; padding: 0; }
+    .tarifs li { margin: 8px 0; font-weight: bold; }
+
+    .avis-externes {
+        margin: 40px auto;
+        padding: 20px;
+        background: rgba(255,255,255,0.85);
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    .avis-externes h2 { margin-bottom: 20px; font-size: 1.5em; }
+    .avis-item { display: flex; justify-content: center; align-items: center; margin: 10px 0; gap: 15px; }
+    .avis-item img { height: 30px; }
+    .avis-item p { margin: 0; font-size: 1em; }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: rgba(244,244,244,0.9);
+    }
+    .logo-small { width: 50px; height: auto; display: block; margin: 10px auto; }
 </style>
 </head>
 <body>
 
 <header>
-<img src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-9/161313191_114306180684362_422754496127768840_n.jpg" alt="Bannière Hypnose et Thérapies" class="banner-img">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80" alt="Bannière Hypnose et Thérapies" class="banner-img" />
 </header>
 
 <nav>
-<a href="#presentation">Présentation</a>
-<a href="#hypnose">Hypnose</a>
-<a href="#emdr">EMDR</a>
-<a href="#temoignages">Témoignages</a>
-<a href="#contact">Contact</a>
+    <a href="#presentation">Présentation</a>
+    <a href="#hypnose">Hypnose</a>
+    <a href="#emdr">EMDR</a>
+    <a href="#temoignages">Témoignages</a>
+    <a href="#contact">Contact</a>
 </nav>
 
 <main>
 
 <!-- Présentation -->
 <section id="presentation">
-<h1>HYPNOSE ET THERAPIES</h1>
-<img src="https://raw.githubusercontent.com/hypnotherapiesmalard-dotcom/hypnose-site/main/httpslh3.googleusercontent.compAF1QipMlsskJ_oddrTPGuRjE6kA9yZmy1NYtPJdmu4YD=w141-h141-n-k-no-nu.jpg" class="portrait" alt="Ma photo">
-<p>Je suis thérapeute spécialisé en hypnose Ericksonienne, EMDR-DSA et Somatic Experiencing. Mon approche est centrée sur la personne, dans un cadre bienveillant et confidentiel. Mon objectif est de vous accompagner vers un mieux-être durable en utilisant des outils efficaces et adaptés à vos besoins.</p>
-<p>Mes outils thérapeutiques sont l'Hypnose Ericksonienne pour traiter le stress, les peurs, les blocages et les addictions; l'EMDR-DSA pour se libérer des traumatismes, deuils et phobies; et la Somatic Experiencing pour réguler le stress chronique et l’anxiété.</p>
-<section class="tarifs">
-<h2>Tarifs</h2>
-<ul>
-<li>Séance individuelle : 55 €</li>
-<li>Sevrage tabagique : 65 €</li>
-<li>Tarif étudiant : 40 €</li>
-</ul>
-</section>
+    <h1>HYPNOSE ET THERAPIES</h1>
+    <img src="https://raw.githubusercontent.com/hypnotherapiesmalard-dotcom/hypnose-site/main/httpslh3.googleusercontent.compAF1QipMlsskJ_oddrTPGuRjE6kA9yZmy1NYtPJdmu4YD=w141-h141-n-k-no-nu.jpg" alt="Ma photo" class="portrait" />
+    <p>Je suis thérapeute spécialisé en hypnose Ericksonienne, EMDR-DSA et Somatic Experiencing. Mon approche est centrée sur la personne, dans un cadre bienveillant et confidentiel. Mon objectif est de vous accompagner vers un mieux-être durable en utilisant des outils efficaces et adaptés à vos besoins.</p>
+    <p>Mes outils thérapeutiques sont l'Hypnose Ericksonienne pour traiter le stress, les peurs, les blocages et les addictions; l'EMDR-DSA pour se libérer des traumatismes, deuils et phobies; et la Somatic Experiencing pour réguler le stress chronique et l’anxiété.</p>
 </section>
 
 <!-- Hypnose -->
 <section id="hypnose">
-<h1>HYPNOSE ERICKSONIENNE</h1>
-<p>L’hypnose Ericksonienne est une approche thérapeutique douce et respectueuse de la personne. Elle permet d’accéder à vos ressources intérieures afin de surmonter différents blocages et difficultés. Chaque séance est personnalisée afin de répondre au mieux à vos besoins.</p>
-<p>Elle est particulièrement efficace pour :</p>
-<ul>
-<li>Stress et anxiété</li>
-<li>Phobies et blocages</li>
-<li>Addictions (tabac, alcool, etc.)</li>
-<li>Troubles du sommeil</li>
-<li>Gestion du poids</li>
-<li>Préparation mentale (examens, compétitions…)</li>
-</ul>
-<section class="tarifs">
-<h2>Tarifs Hypnose</h2>
-<ul>
-<li>Séance individuelle : 55 €</li>
-<li>Sevrage tabagique : 65 €</li>
-<li>Tarif étudiant : 40 €</li>
-</ul>
-</section>
+    <h1>HYPNOSE ERICKSONIENNE</h1>
+    <p>L’hypnose Ericksonienne est une approche thérapeutique douce et respectueuse de la personne. Chaque séance est personnalisée afin de répondre au mieux à vos besoins.</p>
+    <ul style="text-align:left; max-width:700px; margin:auto;">
+        <li>Stress et anxiété</li>
+        <li>Phobies et blocages</li>
+        <li>Addictions (tabac, alcool, etc.)</li>
+        <li>Troubles du sommeil</li>
+        <li>Gestion du poids</li>
+        <li>Préparation mentale (examens, compétitions…)</li>
+    </ul>
+    <div class="tarifs">
+        <h2>Tarifs</h2>
+        <ul>
+            <li>Séance individuelle : 55 €</li>
+            <li>Sevrage tabagique : 65 €</li>
+            <li>Tarif étudiant : 40 €</li>
+        </ul>
+    </div>
 </section>
 
 <!-- EMDR -->
 <section id="emdr">
-<h1>EMDR - DSA</h1>
-<p>L’EMDR-DSA est une thérapie adaptée au traitement des traumatismes, deuils et phobies.</p>
-<p>C'est un outil très puissant qui aide à retraiter les souvenirs douloureux et retrouver un mieux-être durable.</p>
-<section class="tarifs">
-<h2>Tarif EMDR</h2>
-<ul>
-<li>Séance individuelle : 55 €</li>
-</ul>
-</section>
+    <h1>EMDR - DSA</h1>
+    <p>L’EMDR-DSA est une thérapie spécialement adaptée au traitement des traumatismes, deuils et phobies. C'est un outil très puissant qui aide à retraiter les souvenirs douloureux et à retrouver un mieux-être durable.</p>
+    <h2>Tarif de la séance : 55 €</h2>
 </section>
 
 <!-- Témoignages -->
 <section id="temoignages">
-<h1>Témoignages</h1>
+    <h1>TEMOIGNAGES</h1>
 
-<div class="avis-externes">
-<h2>⭐ Avis externes</h2>
-<div class="avis-item">
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" height="30">
-<p><strong>Google :</strong> ★ 4,9 / 5 (<a href="https://share.google/3XonzO7fnAKR9hVb5" target="_blank">voir 35 avis</a>)</p>
-</div>
-<div class="avis-item">
-<p><strong>Pages Jaunes :</strong> ★ 5 / 5 (<a href="https://www.pagesjaunes.fr/pros/60712861" target="_blank">voir 5 avis</a>)</p>
-</div>
-</div>
+    <div class="avis-externes">
+        <h2>⭐ Avis externes</h2>
+        <div class="avis-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Logo Google" />
+            <p><strong>Google :</strong> ★ 4,9 / 5 (<a href="https://share.google/3XonzO7fnAKR9hVb5" target="_blank">voir 35 avis</a>)</p>
+        </div>
+        <div class="avis-item">
+            <p><strong>Pages Jaunes :</strong> ★ 5 / 5 (<a href="https://www.pagesjaunes.fr/pros/60712861" target="_blank">voir 5 avis</a>)</p>
+        </div>
+    </div>
 
-<p>"Merci Vincent ! Pour votre aide et votre empathie, qui m'ont bien aidé à avancer. Je vous recommanderai sans hésiter! Encore une fois merci."</p>
-<p>"Au top, véritablement j'ai l'impression de renaître, je me sens libérée de tous les poids qui pouvaient m'empêcher d'avancer. Aujourd'hui est une nouvelle vie et une autre page qui s'écrit. Merci Vincent pour votre accompagnement."</p>
-<p>"Vincent m'a été d'une grande aide pour vaincre une angoisse. Il a été à l'écoute, bienveillant, empathique. Merci encore Vincent et peut-être à très vite !"</p>
-<p>"J'ai rencontré Vincent après plusieurs années d'anxiété et diverses thérapies non-concluantes. MERCI VINCENT."</p>
-<p>"Cela fait quelques mois maintenant que Vincent me suit quant à un Syndrome de Stress Post Traumatique. Vincent est parvenu dès le premier rendez vous à briser le caractère anxiogène et m'a aidé à retrouver la paix."</p>
-<p>"Séance pour arrêt du tabac. Très bon résultat j'ai arrêté de fumer en une seule séance."</p>
-<p>"En une séance mon habitude de me ronger les ongles a disparu. Vincent est un thérapeute très professionnel."</p>
+    <p>"Merci Vincent ! Pour votre aide et votre empathie, qui m'ont bien aidé à avancer..."</p>
+    <p>"Au top, véritablement j'ai l'impression de renaître..."</p>
+    <p>"Vincent m'a été d'une grande aide pour vaincre une angoisse..."</p>
+    <p>"J'ai rencontré Vincent après plusieurs années d'anxiété et diverses thérapies non-concluantes..."</p>
+    <p>"Cela fait quelques mois maintenant que Vincent me suit quant à un 'Syndrome de Stress Post Traumatique'..."</p>
+    <p>"Séance pour arrêt du tabac. Très bon résultat..."</p>
+    <p>"Quelle expérience, en une séance mon habitude de me ronger les ongles a disparu..."</p>
 </section>
 
 <!-- Contact -->
 <section id="contact">
-<h1>CONTACT</h1>
-<p>Vous pouvez me joindre pour toute question ou prise de rendez-vous :</p>
-<p><strong>Adresse :</strong><br>
-8 rue de Névars, 29140 Rosporden<br>
-ou<br>
-Anahata, Centre de santé intégrative, 5 bis rue des écoles 29900 Concarneau</p>
-<p><strong>Horaires :</strong> du lundi au samedi de 8h30 à 19h30</p>
-<p><strong>Téléphone :</strong> 07 49 77 22 90</p>
-<p><strong>Email :</strong> hypno.therapies.malard@gmail.com</p>
-<p><strong>Règlement :</strong> Chèque, espèces ou virement. Un acompte de 5€ est demandé lors de la réservation, déduit le jour du RDV.</p>
+    <h1>CONTACT</h1>
+    <div style="display:inline-block; text-align:center; max-width:500px; padding:20px;">
+        <p><strong>Adresse :</strong><br>8 rue de Névars, 29140 Rosporden<br>ou<br>Anahata, Centre de santé intégrative, 5 bis rue des écoles 29900 Concarneau</p>
+        <p><strong>Horaires :</strong><br>Du lundi au samedi de 8h30 à 19h30</p>
+        <p><strong>Téléphone :</strong><br>07 49 77 22 90</p>
+        <p><strong>Email :</strong><br>hypno.therapies.malard@gmail.com</p>
+        <p><strong>Règlement :</strong><br>Chèque, espèces ou virement. Un acompte de 5€ pourra être demandé à la réservation.</p>
+    </div>
 </section>
 
 </main>
 
 <footer>
-<p>Adresse : 8 rue de Névars, 29140 Rosporden<br>
-ou<br>
-Anahata, Centre de santé intégrative, 5 bis rue des écoles 29900 Concarneau<br>
-Horaires : du lundi au samedi de 8h30 à 19h30<br>
-Téléphone: 07 49 77 22 90<br>
-Email : hypno.therapies.malard@gmail.com</p>
-<img src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-1/160941709_114306064017707_8155863414297744930_n.jpg
+    <p>
+        Adresse : 8 rue de Névars, 29140 Rosporden<br>
+        ou<br>
+        Anahata, Centre de santé intégrative, 5 bis rue des écoles 29900 Concarneau<br>
+        Horaires : du lundi au samedi de 8h30 à 19h30<br>
+        Téléphone : 07 49 77 22 90<br>
+        Email : hypno.therapies.malard@gmail.com
+    </p>
+    <img src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-1/160941709_114306064017707_8155863414297744930_n.jpg" alt="logo" class="logo-small" />
+</footer>
+
+</body>
+</html>
