@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hypnose & Thérapies - Site Complet</title>
 <style>
-/* ===== Fond doux harmonieux ===== */
 body {
     margin: 0;
     padding: 0;
@@ -38,16 +37,33 @@ a:hover { text-decoration: underline; }
 footer { text-align: center; padding: 20px; background: rgba(244,244,244,0.9); }
 .logo-small { width: 50px; height: auto; display: block; margin: 10px auto; }
 
-/* ===== Sections spécifiques ===== */
-.portrait { width: 200px; border-radius: 50%; margin: 20px 0; border: 4px solid #ccc; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
-.tarifs { background: rgba(255,255,255,0.9); border-radius: 10px; padding: 20px; margin-top: 40px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-align: center; }
-.tarifs h2 { margin-bottom: 15px; color: #2a7f91; }
+/* ===== Portrait en cercle ===== */
+.portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 4px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+
+/* ===== Sections tarifs et avis ===== */
+.tarifs, .avis-externes {
+    background: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 600px; /* réduit la largeur */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.tarifs h2, .avis-externes h2 { margin-bottom: 15px; color: #2a7f91; }
 .tarifs ul { list-style: none; padding: 0; }
 .tarifs li { margin: 8px 0; font-weight: bold; }
-.avis-externes { margin: 40px auto; padding: 20px; background: rgba(255,255,255,0.85); border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center; }
-.avis-externes h2 { margin-bottom: 20px; font-size: 1.5em; }
 .avis-item { display: flex; align-items: center; justify-content: center; margin: 10px 0; gap: 15px; }
 .avis-item img { height: 30px; }
+
 .contact-container { display: inline-block; text-align: center; max-width: 500px; padding: 20px; border-radius: 8px; }
 </style>
 </head>
@@ -66,84 +82,84 @@ footer { text-align: center; padding: 20px; background: rgba(244,244,244,0.9); }
 </nav>
 
 <main>
-    <!-- Section Présentation -->
-    <section id="presentation">
-        <h1>HYPNOSE ET THERAPIES</h1>
-        <div style="display: flex; justify-content: center; margin: 20px 0;">
-            <img src="https://raw.githubusercontent.com/hypnotherapiesmalard-dotcom/hypnose-site/main/httpslh3.googleusercontent.compAF1QipMlsskJ_oddrTPGuRjE6kA9yZmy1NYtPJdmu4YD=w141-h141-n-k-no-nu.jpg" alt="Ma photo" class="portrait">
-        </div>
-        <p>Je suis thérapeute spécialisé en hypnose Ericksonienne, EMDR-DSA et Somatic Experiencing. Mon approche est centrée sur la personne, dans un cadre bienveillant et confidentiel. Mon objectif est de vous accompagner vers un mieux-être durable en utilisant des outils efficaces et adaptés à vos besoins.</p>
-        <p>Mes outils thérapeutiques sont l'Hypnose Ericksonienne pour traiter le stress, les peurs, les blocages et les addictions; l'EMDR-DSA pour se libérer des traumatismes, deuils et phobies; et la Somatic Experiencing pour réguler le stress chronique et l’anxiété.</p>
-    </section>
+<section id="presentation">
+    <h1>HYPNOSE ET THERAPIES</h1>
+    <div style="display: flex; justify-content: center; margin: 20px 0;">
+        <img src="https://raw.githubusercontent.com/hypnotherapiesmalard-dotcom/hypnose-site/main/httpslh3.googleusercontent.compAF1QipMlsskJ_oddrTPGuRjE6kA9yZmy1NYtPJdmu4YD=w141-h141-n-k-no-nu.jpg" alt="Ma photo" class="portrait">
+    </div>
+    <p>Je suis thérapeute spécialisé en hypnose Ericksonienne, EMDR-DSA et Somatic Experiencing. Mon approche est centrée sur la personne, dans un cadre bienveillant et confidentiel. Mon objectif est de vous accompagner vers un mieux-être durable en utilisant des outils efficaces et adaptés à vos besoins.</p>
+    <p>Mes outils thérapeutiques sont l'Hypnose Ericksonienne pour traiter le stress, les peurs, les blocages et les addictions; l'EMDR-DSA pour se libérer des traumatismes, deuils et phobies; et la Somatic Experiencing pour réguler le stress chronique et l’anxiété.</p>
+</section>
 
-    <!-- Section Hypnose -->
-    <section id="hypnose">
-        <h1>HYPNOSE ERICKSONIENNE</h1>
-        <p>L’hypnose Ericksonienne est une approche thérapeutique douce et respectueuse de la personne. Elle permet d’accéder à vos ressources intérieures afin de surmonter différents blocages et difficultés. Chaque séance est personnalisée afin de répondre au mieux à vos besoins. L’hypnose est un état naturel, que vous expérimentez déjà chaque jour sans le savoir, par exemple lorsque vous êtes plongé dans un film ou absorbé dans vos pensées.</p>
-        <p>Elle est particulièrement efficace pour :</p>
-        <ul style="text-align:left; max-width:700px; margin:auto;">
-            <li>Stress et anxiété</li>
-            <li>Phobies et blocages</li>
-            <li>Addictions (tabac, alcool, etc.)</li>
-            <li>Troubles du sommeil</li>
-            <li>Gestion du poids</li>
-            <li>Préparation mentale (examens, compétitions…)</li>
+<section id="hypnose">
+    <h1>HYPNOSE ERICKSONIENNE</h1>
+    <p>L’hypnose Ericksonienne est une approche thérapeutique douce et respectueuse de la personne. Elle permet d’accéder à vos ressources intérieures afin de surmonter différents blocages et difficultés. Chaque séance est personnalisée afin de répondre au mieux à vos besoins. L’hypnose est un état naturel, que vous expérimentez déjà chaque jour sans le savoir, par exemple lorsque vous êtes plongé dans un film ou absorbé dans vos pensées.</p>
+    <p>Elle est particulièrement efficace pour :</p>
+    <ul style="text-align:left; max-width:700px; margin:auto;">
+        <li>Stress et anxiété</li>
+        <li>Phobies et blocages</li>
+        <li>Addictions (tabac, alcool, etc.)</li>
+        <li>Troubles du sommeil</li>
+        <li>Gestion du poids</li>
+        <li>Préparation mentale (examens, compétitions…)</li>
+    </ul>
+    <section class="tarifs">
+        <h2>Tarifs Hypnose</h2>
+        <ul>
+            <li>Séance individuelle : <strong>55 €</strong></li>
+            <li>Sevrage tabagique : <strong>65 €</strong></li>
+            <li>Tarif étudiant : <strong>40 €</strong></li>
         </ul>
-        <section class="tarifs">
-            <h2>Tarifs</h2>
-            <ul>
-                <li>Séance individuelle : <strong>55 €</strong></li>
-                <li>Sevrage tabagique : <strong>65 €</strong></li>
-                <li>Tarif étudiant : <strong>40 €</strong></li>
-            </ul>
-        </section>
     </section>
+</section>
 
-    <!-- Section EMDR -->
-    <section id="emdr">
-        <h1>EMDR - DSA</h1>
-        <p>L’EMDR-DSA est une thérapie spécialement adaptée au traitement des traumatismes, deuils et phobies.</p>
-        <p>C'est un outil très puissant qui aide à retraiter les souvenirs douloureux. Vous prenez alors de la distance avec ces évènements du passé, ils n'ont plus d'impact sur votre quotidien et vous retrouvez un mieux-être durable très rapidement.</p>
-        <h2>Tarif de la séance 55€</h2>
+<section id="emdr">
+    <h1>EMDR - DSA</h1>
+    <p>L’EMDR-DSA est une thérapie spécialement adaptée au traitement des traumatismes, deuils et phobies.</p>
+    <p>C'est un outil très puissant qui aide à retraiter les souvenirs douloureux. Vous prenez alors de la distance avec ces évènements du passé, ils n'ont plus d'impact sur votre quotidien et vous retrouvez un mieux-être durable très rapidement.</p>
+    <section class="tarifs">
+        <h2>Tarif EMDR</h2>
+        <ul>
+            <li>Séance : <strong>55 €</strong></li>
+        </ul>
     </section>
+</section>
 
-    <!-- Section Témoignages -->
-    <section id="temoignages">
-        <h1>TEMOIGNAGES</h1>
-
-        <div class="avis-externes">
-            <h2>⭐ Avis externes</h2>
-            <div class="avis-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Logo Google">
-                <p><strong>Google :</strong> ★ 4,9 / 5 (<a href="https://share.google/3XonzO7fnAKR9hVb5" target="_blank">voir 35 avis</a>)</p>
-            </div>
-            <div class="avis-item">
-                <p><strong>Pages Jaunes :</strong> ★ 5 / 5 (<a href="https://www.pagesjaunes.fr/pros/60712861" target="_blank">voir 5 avis</a>)</p>
-            </div>
+<section id="temoignages">
+    <h1>TEMOIGNAGES</h1>
+    <div class="avis-externes">
+        <h2>⭐ Avis externes</h2>
+        <div class="avis-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Logo Google">
+            <p><strong>Google :</strong> ★ 4,9 / 5 (<a href="https://share.google/3XonzO7fnAKR9hVb5" target="_blank">voir 35 avis</a>)</p>
         </div>
-
-        <!-- Tous les témoignages écrits conservés -->
-        <p>"Merci Vincent ! Pour votre aide et votre empathie, qui m'ont bien aidé à avancer. Je vous recommanderai sans hésiter! Encore une fois merci."</p>
-        <p>"Au top, véritablement j'ai l'impression de renaître, je me sens libérée de tous les poids qui pouvaient m'empêcher d'avancer. Aujourd'hui est une nouvelle vie et une autre page qui s'écrit. Vous pouvez lui donner toute votre confiance, il vous aidera et je vous invite à y aller. Merci Vincent pour votre accompagnement. Merci beaucoup de m'avoir libéré de tous mes maux."</p>
-        <p>"Vincent m'a été d'une grande aide pour vaincre une angoisse. Il a été à l'écoute, bienveillant, empathique. J'ai réussi grâce à ses pratiques comme l'EMDR à gagner certaines batailles ! Je recommande vivement pour un moment de sérénité et un réel changement dans sa vie ! Merci encore Vincent et peut-être à très vite !"</p>
-        <p>"J'ai rencontré Vincent après plusieurs années d'anxiété et diverses thérapies non-concluantes. Il a très rapidement cerné le problème et par l'EMDR puis l'hypnose a fait taire l'anxiété l'attente. À voir comment cela évolue dans les prochains mois, mais j'ai repris confiance et je suis serein. Un thérapeute rare : bienveillant, disponible, efficace et profondément humain. MERCI VINCENT."</p>
-        <p>"Cela fait quelques mois maintenant que Vincent me suit quant à un 'Syndrome de Stress Post Traumatique' (entre autres) que je traîne depuis déjà moultes années et qui fragilisait grandement mon équilibre de vie à tout juste 31 ans. En toute honnêteté, je reconnais avoir été assez dubitative quant à l'hypnose et à L'EMDR de manière générale. Mais, ayant déjà consulté une psychologue une première fois et ayant été fortement déçue, j'ai eu envie 'd'essayer' une approche différente.. Comme j'ai bien fait ! Vincent est parvenu dès le premier rendez vous à briser le caractère anxiogène du 'je vais consulter un professionnel' de part son approche, sa bienveillance, son écoute, sa disponibilité, son intérêt, sa sincère sincérité et son empathie. Je l'ai senti totalement et profondément investi tout au long des séances. Grâce à lui et à cette relation de confiance très facilement et rapidement mise en place, j'ai d'ores et déjà fait de considérables progrès et me sens plus en paix face à mon passé et en reconnexion progressive avec moi même. Les améliorations et l'avancée sont réellement là (cela est valable tant pour les séances d'hypnose que pour les séances d'EMDR dont j'ai bénéficié). L'homme ET le professionnel font la paire. Sans l'ombre d'une hésitation, je recommande Vincent à 2 000% les yeux fermés !!! Il a toute ma confiance et la mérite bien !"</p>
-        <p>"Séance pour arrêt du tabac. Très bon résultat j'ai arrêté de fumer en une seule séance. Très bon accueil et échange merci pour votre aide. Je recommande"</p>
-        <p>"Quelle expérience, en une séance mon habitude de me ronger les ongles a disparu. Vincent est un thérapeute très professionnel , j’y retournerais sans hésiter si besoin. Merci encore."</p>
-    </section>
-
-    <!-- Section Contact -->
-    <section id="contact">
-        <h1>CONTACT</h1>
-        <div class="contact-container">
-            <p>Vous pouvez me joindre pour toute question ou prise de rendez-vous :</p>
-            <p><strong>Adresse :</strong><br>8 rue de Névars, 29140 Rosporden<br>ou<br>Anahata, Centre de santé intégrative, 5 bis rue des écoles 29900 Concarneau</p>
-            <p><strong>Horaires :</strong><br>Du lundi au samedi de 8h30 à 19h30</p>
-            <p><strong>Téléphone :</strong><br>07 49 77 22 90</p>
-            <p><strong>Email :</strong><br>hypno.therapies.malard@gmail.com</p>
-            <p><strong>Règlement :</strong><br>Vous pouvez règler les séances en chèque, en espèces ou par virement. Aujourd'hui les mutuelles remboursent une partie, ou toutes les séances en vous demandant une facture que je vous remets en fin de RDV. Malheureusement, pour faire face aux annulations de dernière minute qui se multiplient ces derniers mois, je vous demanderai un accompte de 5€ lorsque vous réserverez une séance, qui sera bien évidemment déduit le jour de votre RDV.</p>
+        <div class="avis-item">
+            <p><strong>Pages Jaunes :</strong> ★ 5 / 5 (<a href="https://www.pagesjaunes.fr/pros/60712861" target="_blank">voir 5 avis</a>)</p>
         </div>
-    </section>
+    </div>
+
+    <!-- Témoignages écrits conservés -->
+    <p>"Merci Vincent ! Pour votre aide et votre empathie, qui m'ont bien aidé à avancer. Je vous recommanderai sans hésiter! Encore une fois merci."</p>
+    <p>"Au top, véritablement j'ai l'impression de renaître, je me sens libérée de tous les poids qui pouvaient m'empêcher d'avancer. Aujourd'hui est une nouvelle vie et une autre page qui s'écrit. Vous pouvez lui donner toute votre confiance, il vous aidera et je vous invite à y aller. Merci Vincent pour votre accompagnement. Merci beaucoup de m'avoir libéré de tous mes maux."</p>
+    <p>"Vincent m'a été d'une grande aide pour vaincre une angoisse. Il a été à l'écoute, bienveillant, empathique. J'ai réussi grâce à ses pratiques comme l'EMDR à gagner certaines batailles ! Je recommande vivement pour un moment de sérénité et un réel changement dans sa vie ! Merci encore Vincent et peut-être à très vite !"</p>
+    <p>"J'ai rencontré Vincent après plusieurs années d'anxiété et diverses thérapies non-concluantes. Il a très rapidement cerné le problème et par l'EMDR puis l'hypnose a fait taire l'anxiété l'attente. À voir comment cela évolue dans les prochains mois, mais j'ai repris confiance et je suis serein. Un thérapeute rare : bienveillant, disponible, efficace et profondément humain. MERCI VINCENT."</p>
+    <p>"Cela fait quelques mois maintenant que Vincent me suit quant à un 'Syndrome de Stress Post Traumatique' (entre autres) que je traîne depuis déjà moultes années et qui fragilisait grandement mon équilibre de vie à tout juste 31 ans. En toute honnêteté, je reconnais avoir été assez dubitative quant à l'hypnose et à L'EMDR de manière générale. Mais, ayant déjà consulté une psychologue une première fois et ayant été fortement déçue, j'ai eu envie 'd'essayer' une approche différente.. Comme j'ai bien fait ! Vincent est parvenu dès le premier rendez vous à briser le caractère anxiogène du 'je vais consulter un professionnel' de part son approche, sa bienveillance, son écoute, sa disponibilité, son intérêt, sa sincère sincérité et son empathie. Je l'ai senti totalement et profondément investi tout au long des séances. Grâce à lui et à cette relation de confiance très facilement et rapidement mise en place, j'ai d'ores et déjà fait de considérables progrès et me sens plus en paix face à mon passé et en reconnexion progressive avec moi même. Les améliorations et l'avancée sont réellement là (cela est valable tant pour les séances d'hypnose que pour les séances d'EMDR dont j'ai bénéficié). L'homme ET le professionnel font la paire. Sans l'ombre d'une hésitation, je recommande Vincent à 2 000% les yeux fermés !!! Il a toute ma confiance et la mérite bien !"</p>
+    <p>"Séance pour arrêt du tabac. Très bon résultat j'ai arrêté de fumer en une seule séance. Très bon accueil et échange merci pour votre aide. Je recommande"</p>
+    <p>"Quelle expérience, en une séance mon habitude de me ronger les ongles a disparu. Vincent est un thérapeute très professionnel , j’y retournerais sans hésiter si besoin. Merci encore."</p>
+</section>
+
+<section id="contact">
+    <h1>CONTACT</h1>
+    <div class="contact-container">
+        <p>Vous pouvez me joindre pour toute question ou prise de rendez-vous :</p>
+        <p><strong>Adresse :</strong><br>8 rue de Névars, 29140 Rosporden<br>ou<br>Anahata, Centre de santé intégrative, 5 bis rue des écoles 29900 Concarneau</p>
+        <p><strong>Horaires :</strong><br>Du lundi au samedi de 8h30 à 19h30</p>
+        <p><strong>Téléphone :</strong><br>07 49 77 22 90</p>
+        <p><strong>Email :</strong><br>hypno.therapies.malard@gmail.com</p>
+        <p><strong>Règlement :</strong><br>Vous pouvez règler les séances en chèque, en espèces ou par virement. Aujourd'hui les mutuelles remboursent une partie, ou toutes les séances en vous demandant une facture que je vous remets en fin de RDV. Malheureusement, pour faire face aux annulations de dernière minute qui se multiplient ces derniers mois, je vous demanderai un accompte de 5€ lorsque vous réserverez une séance, qui sera bien évidemment déduit le jour de votre RDV.</p>
+    </div>
+</section>
+
 </main>
 
 <footer>
