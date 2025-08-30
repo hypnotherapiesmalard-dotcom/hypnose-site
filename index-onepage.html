@@ -44,7 +44,7 @@
         display: block;
     }
 
-    .tarifs, .avis-externes, .contact-container {
+    .tarifs {
         background: rgba(255,255,255,0.9);
         border-radius: 10px;
         padding: 20px;
@@ -53,18 +53,36 @@
         box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         text-align: center;
     }
-    .tarifs h2, .avis-externes h2 { margin-bottom: 15px; color: #2a7f91; }
-    .tarifs ul, .avis-externes ul { list-style: none; padding: 0; }
+    .tarifs h2 { margin-bottom: 15px; color: #2a7f91; }
+    .tarifs ul { list-style: none; padding: 0; }
     .tarifs li { margin: 8px 0; font-weight: bold; }
 
     .avis-externes {
         background: rgba(255,255,255,0.85);
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 400px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: center;
     }
+    .avis-externes h2 { margin-bottom: 20px; font-size: 1.5em; }
+
     .avis-item { display: flex; align-items: center; justify-content: center; margin: 10px 0; gap: 15px; }
     .avis-item img { height: 30px; }
     .avis-item p { margin: 0; font-size: 1em; }
     .avis-item a { color: #2a7f91; text-decoration: none; font-weight: bold; }
     .avis-item a:hover { text-decoration: underline; }
+
+    .contact-container {
+        background: rgba(255,255,255,0.9);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 400px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        text-align: center;
+    }
 
     footer {
         text-align: center;
@@ -172,7 +190,7 @@
         Téléphone: 07 49 77 22 90<br>
         Email : hypno.therapies.malard@gmail.com
     </p>
-    <!-- Logo identique à la page présentation -->
+    <!-- Logo fonctionnel via URL externe, comme avant -->
     <img src="https://scontent.frns1-1.fna.fbcdn.net/v/t1.6435-1/160941709_114306064017707_8155863414297744930_n.jpg" alt="logo" class="logo-small">
 </footer>
 
