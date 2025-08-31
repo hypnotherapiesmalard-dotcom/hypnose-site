@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merci pour votre demande</title>
+    <title>Nos Formations en Ligne</title>
     <style>
         /* Styles globaux */
         body {
@@ -61,6 +61,34 @@
             background-color: #e65c00;
         }
 
+        /* Section formations */
+        .formations {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .formation {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .formation img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .formation h3 {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .formation p {
+            font-size: 1em;
+            color: #666;
+        }
+
         /* Section témoignages */
         .testimonials {
             display: flex;
@@ -106,43 +134,64 @@
 
     <!-- En-tête -->
     <header>
-        <h1>Merci pour votre demande</h1>
+        <h1>Nos Formations en Ligne</h1>
     </header>
 
     <!-- Bannière -->
     <div class="banner">
-        <h2>Nous avons bien reçu votre message</h2>
+        <h2>Transformez votre avenir professionnel avec nos formations certifiantes</h2>
     </div>
 
     <!-- Section principale -->
     <main>
-        <p>Un conseiller vous contactera dans les plus brefs délais pour échanger sur votre projet et répondre à vos questions.</p>
-        <p>En attendant, vous pouvez consulter notre <a href="https://www.youschool.fr/blog" target="_blank">blog</a> pour découvrir nos dernières actualités et conseils.</p>
-        <a href="https://www.youschool.fr/contact" class="cta-button">Contactez-nous</a>
+        <p>Découvrez nos formations 100% en ligne, adaptées à vos besoins et à votre rythme. Que vous soyez en reconversion professionnelle ou en quête de nouvelles compétences, nous avons la formation qu'il vous faut.</p>
+        <a href="#formations" class="cta-button">Explorer nos formations</a>
     </main>
+
+    <!-- Section formations -->
+    <div class="formations" id="formations">
+        <div class="formation">
+            <img src="https://via.placeholder.com/300x200" alt="Formation 1">
+            <h3>Formation en Développement Web</h3>
+            <p>Apprenez à créer des sites web modernes et responsives avec HTML, CSS et JavaScript.</p>
+            <a href="#" class="cta-button">En savoir plus</a>
+        </div>
+        <div class="formation">
+            <img src="https://via.placeholder.com/300x200" alt="Formation 2">
+            <h3>Formation en Marketing Digital</h3>
+            <p>Maîtrisez les outils et stratégies du marketing en ligne pour booster votre visibilité.</p>
+            <a href="#" class="cta-button">En savoir plus</a>
+        </div>
+        <div class="formation">
+            <img src="https://via.placeholder.com/300x200" alt="Formation 3">
+            <h3>Formation en Gestion de Projet</h3>
+            <p>Apprenez à gérer efficacement vos projets, de la planification à l'exécution.</p>
+            <a href="#" class="cta-button">En savoir plus</a>
+        </div>
+    </div>
 
     <!-- Section témoignages -->
     <div class="testimonials">
         <div class="testimonial">
             <img src="https://via.placeholder.com/50" alt="Photo de Marie">
             <h3>Marie D.</h3>
-            <p>« Grâce à YouSchool, j'ai trouvé la formation qui correspondait parfaitement à mes attentes. »</p>
+            <p>« Grâce à cette formation, j'ai pu changer de carrière et aujourd'hui je travaille en tant que développeuse web. »</p>
         </div>
         <div class="testimonial">
             <img src="https://via.placeholder.com/50" alt="Photo de Paul">
             <h3>Paul L.</h3>
-            <p>« L'accompagnement personnalisé m'a permis de réussir ma reconversion professionnelle. »</p>
+            <p>« Les cours sont clairs et bien structurés, j'ai acquis des compétences solides en marketing digital. »</p>
         </div>
         <div class="testimonial">
             <img src="https://via.placeholder.com/50" alt="Photo de Sophie">
             <h3>Sophie G.</h3>
-            <p>« Des formations de qualité avec des formateurs à l'écoute et compétents. »</p>
+            <p>« La formation en gestion de projet m'a permis de décrocher un poste de chef de projet dans une grande entreprise. »</p>
         </div>
     </div>
 
     <!-- Pied de page -->
     <footer>
-        <p>© 2025 YouSchool - Tous droits réservés</p>
+        <p>© 2025 Votre Entreprise - Tous droits réservés</p>
     </footer>
 
 </body>
